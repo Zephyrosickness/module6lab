@@ -1,9 +1,6 @@
-import java.util.Scanner;
-
 public class fuelCosts {
     public static void run(){
         //init var
-        Scanner scan = new Scanner(System.in);
         final int MIN_BOUNDS = 0; //minimum for all values
         final int MAX_BOUNDS = -1; // maximum; validity checks require max bounds however u dont rly need max bounds here so its -1
         final double MILE_COUNT = 100; //when finding $ per X miles

@@ -1,9 +1,6 @@
-import java.util.Scanner;
-
 public class CtoFConverter {
     public static void run(){
         //init var
-        Scanner scan = new Scanner(System.in);
         boolean doubleValidity = false; //is input valid? (if in range and an double, true)
         int MIN_BOUNDS = -1;
         int MAX_BOUNDS = -1; //no need to do range checks here

@@ -3,8 +3,8 @@ import java.util.*;
 public class root {
     public static void main(String[] args) {
         //init var
-        final String[] TASK_NAMES = new String[]{"Part 1: Celsius to Fahrenheit Converter", "Part 2: Fuel Costs", "Part 3: Rectangle Information", "Part 4: Theater Kiosk", "Part 5: Number Comparison"};
-        Scanner scan = new Scanner(System.in); //ngl i can proly just make this static and have every other subroutine call this scanner instead of all having their own but i heard static vars are bad or somthing
+        final String[] TASK_NAMES = new String[]{"Part 1: Celsius to Fahrenheit Converter", "Part 2: Fuel Costs", "Part 3: Rectangle Information", "Part 4: Metric Converter", "Part 5: Guessing Game"};
+        Scanner scan = new Scanner(System.in);
         final int MIN_BOUND = 1;
         final int MAX_BOUND = Arrays.asList(TASK_NAMES).size();
         final String MESSAGE = "Select a task. [Enter an int from "+MIN_BOUND+"-"+MAX_BOUND+"]";
@@ -22,14 +22,14 @@ public class root {
             case 2:
                 fuelCosts.run();
                 break;
-            /*case 3:
-                partyAffiliation.run();
+            case 3:
+                rectangleInfo.run();
                 break;
             case 4:
-                theaterKiosk.run();
+                metricConverter.run();
                 break;
             case 5:
-                numCompare.run();*/
+                guessingGame.run();
         }
     }
 
