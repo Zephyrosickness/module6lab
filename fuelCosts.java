@@ -6,8 +6,8 @@ public class fuelCosts {
         final double MILE_COUNT = 100; //when finding $ per X miles
 
         //input/output how many miles are in the tank
-        String message = "How many miles are in the tank?";
-        double milesInTank = root.validityCheck(MIN_BOUNDS, MAX_BOUNDS, message);
+        String message = "How many gallons are in the tank?";
+        double gallonsInTank = root.validityCheck(MIN_BOUNDS, MAX_BOUNDS, message);
 
         //input/output efficiency
         message = "What's the fuel efficiency? (In MPG)";
@@ -17,10 +17,8 @@ public class fuelCosts {
         message = "What's the price per gallon?";
         double pricePerGallon = root.validityCheck(MIN_BOUNDS, MAX_BOUNDS, message);
 
-        double costPer100 = MILE_COUNT/fuelEfficiency;
-        costPer100 *= pricePerGallon;
-
-        double distanceLeft = (fuelEfficiency/milesInTank)*100;
+        double costPer100 = (MILE_COUNT/fuelEfficiency)*pricePerGallon;
+        double distanceLeft = fuelEfficiency*gallonsInTank;
 
         System.out.printf("Cost per %.0f Miles $: %.2f\n"+"Distance left in Miles: %.2f", MILE_COUNT, costPer100, distanceLeft);
     }
