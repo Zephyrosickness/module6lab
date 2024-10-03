@@ -71,9 +71,9 @@ public class root {
                     if (MAX_SPECIFIED) { //if max bounds are necessary but min is not
                         intValidity = meetsMax; //exits doWhile
 
-                        //if min+max bound is specified
+                        //if min+max bound is not specified
                     } else {
-                        intValidity = meetsMin&&meetsMax; //exits doWhile
+                        intValidity = true; //exits doWhile
                     }
                 }
                 if(!intValidity){
